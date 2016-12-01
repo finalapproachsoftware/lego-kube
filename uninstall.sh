@@ -7,7 +7,7 @@ then
   exit 1
 fi
 
-kubectl delete configmap lego-config --namespace=lego 2> /dev/null
-kubectl delete deployment lego-server --namespace=lego 2> /dev/null
-kubectl delete secret --all --namespace=lego 
-kubectl delete ingress --all --namespace=lego 
+kubectl delete configmap lego-config --namespace=kube-lego 2> /dev/null
+kubectl delete deployment kube-lego --namespace=kube-lego 2> /dev/null
+kubectl delete secret --all --namespace=kube-lego 
+kubectl delete ingress --all --namespace=kube-lego 

@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: lego-config
-  namespace: lego
+  namespace: kube-lego
 data:
   # modify this to specify your address
   lego.email: "cert@example.com"
